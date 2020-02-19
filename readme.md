@@ -8,25 +8,27 @@ Registration and password reset will be prohibited.
 
 Enter the file in the root of the site .htaccess:  
 
-```<files wp-config.php>
+```
+&lt;files wp-config.php&gt;
  order allow,deny
  deny from all
-</files>
+&lt;/files&gt;
 
-<Files xmlrpc.php>
+&lt;Files xmlrpc.php&gt;
  order deny,allow
  deny from all
-</Files>
+&lt;/Files&gt;
 
-<files readme.html>
+&lt;files readme.html&gt;
  order allow,deny
  deny from all
-</files>
+&lt;/files&gt;
 
-<files license.txt>
+&lt;files license.txt&gt;
  order allow,deny
  deny from all
-</files>```
+&lt;/files&gt;
+```
 
 ------------------------------
 

@@ -2,6 +2,32 @@
 
 For headless WordPress (rest-api only)  
 
+The frontend part of the site will be closed, but you can visit the login page (https://your-site.com/wp-login.php)
+ and admin panel and https://your-site.com/wp-json/.  
+Registration and password reset will be prohibited.  
+
+Enter the file in the root of the site .htaccess:  
+
+```<files wp-config.php>
+ order allow,deny
+ deny from all
+</files>
+
+<Files xmlrpc.php>
+ order deny,allow
+ deny from all
+</Files>
+
+<files readme.html>
+ order allow,deny
+ deny from all
+</files>
+
+<files license.txt>
+ order allow,deny
+ deny from all
+</files>```
+
 ------------------------------
 
 ## Installation  
@@ -25,6 +51,15 @@ Now, hover over the theme thumbnail and press the Activate button
 ------------------------------
 
 ## Changelog:  
+
+**2020-02-19**  
+v1.1  
+- [x] closed the registration of new users (and removed the link to this tab)  
+- [x] closed the password recovery tab  
+- [x] deleted the link to the main page of the site from the login form  
+- [x] removed seo headline: "WordPress" - on login page  
+- [x] removed css & js and customized login page  
+
 
 **2020-01-31**  
 v1.0  

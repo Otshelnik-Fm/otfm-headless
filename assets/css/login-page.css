@@ -1,0 +1,114 @@
+body,
+html{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+body{
+    background:#eee;
+    color:#444;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size:14px;
+    line-height:1.4;
+    min-width:0;
+}
+p{
+    line-height:normal;
+}
+#login{
+    margin:auto;
+    padding:8% 0 0;
+    width:320px;
+}
+@media screen and (max-height:550px){
+    #login{padding:24px 0;}
+}
+.login *{
+    margin:0;
+}
+.login #login_error,
+.login .message,
+.login .success {
+    background-color: #fff;
+    border-left: 4px solid #00a0d2;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin-bottom: 24px;
+    padding: 12px;
+}
+.login .success{
+    border-left-color:#46b450;
+}
+.login #login_error{
+    border-left-color:#dc3232;
+}
+.login form {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-top: 24px;
+    overflow: hidden;
+    padding: 30px 18px 18px;
+}
+.login label {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.login form .input{
+    background:#f4f4ea;
+}
+.login form .input {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 0 transparent;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 22px;
+    margin: 0 0 24px 0;
+    min-height: 40px;
+    padding: 3px 6px;
+    width: 100%;
+}
+.login form .input:focus {
+    border-color: #007cba;
+}
+.login form .forgetmenot{
+    float:left;
+}
+.login .forgetmenot label {
+    line-height: 1;
+    margin: 6px 0 0;
+    padding: 3px 0 0 30px;
+    position: relative;
+    user-select: none;
+}
+input[type="checkbox"] {display:none;}
+input[type="checkbox"] + label:before {
+    content:"☐";
+    font-size: 30px;
+    left: 0;
+    position: absolute;
+    top: -6px;
+}
+input:checked + label:before {
+    content:"☑";
+}
+label:hover {
+    color:#007cba;
+}
+.submit .button {
+    background: #007cba;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    min-height: 32px;
+    padding: 0 12px;
+}
+.submit .button:focus,
+.submit .button:hover {
+    background: #0071a1;
+}
+.wp-pwd .button {
+    display: none;
+}

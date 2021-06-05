@@ -27,7 +27,7 @@ function otfmh_login_page_resource() {
 // remove title seo
 add_filter( 'login_title', 'otfmh_remove_title_wp' );
 function otfmh_remove_title_wp() {
-    return 'Log In &lsaquo; ' . get_bloginfo( 'name', 'display' );
+    return __( 'Log In &lsaquo;', 'otfm-headless' ) . ' ' . get_bloginfo( 'name', 'display' );
 }
 
 // disable Powered by WordPress - on login form
@@ -62,4 +62,16 @@ function otfmh_custom_login_text( $text ) {
         return '';
     }
     return $text;
+}
+
+// disable RSS Feed
+add_action( 'do_feed', 'otfmh_disable_feed', 1 );
+add_action( 'do_feed_rdf', 'otfmh_disable_feed', 1 );
+add_action( 'do_feed_rss', 'otfmh_disable_feed', 1 );
+add_action( 'do_feed_rss2', 'otfmh_disable_feed', 1 );
+add_action( 'do_feed_atom', 'otfmh_disable_feed', 1 );
+add_action( 'do_feed_rss2_comments', 'otfmh_disable_feed', 1 );
+add_action( 'do_feed_atom_comments', 'otfmh_disable_feed', 1 );
+function otfmh_disable_feed() {
+    wp_die( __( 'Access denied', 'otfm-headless' ) );
 }

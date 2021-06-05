@@ -53,6 +53,11 @@ Now, hover over the theme thumbnail and press the Activate button
 ------------------------------
 
 ## Changelog:  
+**2021-06-05**  
+v1.2  
+- [x] remove rss feed  
+- [x] adding localization
+- [x] add description in readme.txt  
 
 **2020-02-19**  
 v1.1  

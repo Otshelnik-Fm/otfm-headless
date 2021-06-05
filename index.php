@@ -1,3 +1,3 @@
 <?php
 
-wp_die( "<pre>Access denied</pre>" );
+wp_die( "<pre>" . __( 'Access denied', 'otfm-headless' ) . "</pre>" );

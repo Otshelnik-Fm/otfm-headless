@@ -1,9 +1,15 @@
 /*
-Theme Name:     OTFM Headless
-Theme URI:      https://otshelnik-fm.ru
-Version:        1.1
-Description:    For headless WordPress (rest-api only)
-Tags:           REST-API, Headless-WordPress
-Author:         Otshelnik-Fm
-Author URI:     https://otshelnik-fm.ru
+Theme Name:         OTFM Headless
+Theme URI:          https://github.com/Otshelnik-Fm/otfm-headless
+Version:            1.2
+Description:        For headless WordPress (rest-api only). The frontend part of the site will be closed, but you can visit the login page (https://your-site.com/wp-login.php) and admin panel and https://your-site.com/wp-json/. Registration and password reset will be prohibited.
+Tags:               REST-API, Headless, Headless-WordPress
+Requires at least:  5.5.0
+Tested up to:       5.7
+Requires PHP:       7.0
+Author:             Otshelnik-Fm (Wladimir Druzhaev)
+Author URI:         https://otshelnik-fm.ru
+License:            GNU General Public License v2 or later
+License URI:        http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:        otfm-headless
 */

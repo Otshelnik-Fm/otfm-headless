@@ -19,6 +19,7 @@ function otfmh_disable_lost_password() {
 add_action( 'login_enqueue_scripts', 'otfmh_login_page_resource' );
 function otfmh_login_page_resource() {
     wp_deregister_script( 'password-strength-meter' );
+
     wp_dequeue_style( 'login' );
 
     wp_enqueue_style( 'otfm_login_page_css', get_stylesheet_directory_uri() . '/assets/css/login-page.css' );
